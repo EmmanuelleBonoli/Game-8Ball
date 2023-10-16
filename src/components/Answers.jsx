@@ -4,17 +4,17 @@ import React from 'react';
 const answers = [
     {
         id: 1,
-        answer: "What the fuck !? ",
+        answer: "What the fuck !?",
         img: "",
     },
     {
         id: 2,
-        answer: "Tu peux compter là dessus. ",
+        answer: "Tu peux compter là dessus !",
         img: "",
     },
     {
         id: 3,
-        answer: "Demande plutôt à Lucas",
+        answer: "Demande plutôt à Lucas !",
         img: "",
     },
     {
@@ -56,6 +56,7 @@ const answers = [
     {
         id: 11,
         answer: "",
+        img: "",
     }
 ];
 

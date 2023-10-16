@@ -10,7 +10,17 @@
         padding: 12px;
     }
 
-
+    .firstAnswer {
+        background-image: url("src/images/answerBall8-v3.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 15vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
 
 
