@@ -48,7 +48,7 @@ function Button({ answers }) {// on a mis la props answers en paramètres de la 
     return (
         <div>
             <div>
-                <img src="workshop1610/src/images/ball8.png" alt="magicball" />"
+                <img src="src/images/ball8.png" alt="magicball" />"
             </div>
             <div className="buttonComponent">
                 <h1>WCS Magic 8 Ball : </h1>
