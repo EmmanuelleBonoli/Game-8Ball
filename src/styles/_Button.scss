@@ -1,7 +1,9 @@
+@import "settings";
+
 .buttonComponent {
     h1 {
         font-size: 20px;
-        color: white;
+        color: $Maintext-color;
     }
 
 
@@ -16,12 +18,58 @@
         background-position: center;
         background-size: contain;
         height: 15vh;
-        color: white;
+        color: $Maintext-color;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
+}
 
+.historyTable {
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow:  4px 4px 0px #3a3838;
+    display:flex;
+    width:35vh;
+    flex-direction: column;
+
+    h1 {
+        padding: 10px 0 10px 0;
+        font-size: 20px;
+        color: rgb(17, 17, 133); 
+    }
+
+  
+    
+}
+
+.boxHalfWidth {
+    border-bottom: solid black 2px;
+    width: 15vh;
+    height: 1px;
+    border-bottom: 3px solid #807a7a;
+    border-radius: 20px;
+    margin:5px;
+    
+}
+
+.QR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#R {
+    color: rgb(17, 17, 133); 
+    padding : 10px;
+    font-weight: bold;
+}
+
+#Q {
+    color: rgb(17, 17, 133); 
+    padding : 10px;
+    font-weight: bold;
 
 }
