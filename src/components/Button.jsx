@@ -20,7 +20,7 @@ function Button({ answers }) {// on a mis la props answers (tableau de réponse)
 
   
     const handleRandom = () => { //fonction au click "soumettre"
-        const updatedRandom = Math.floor(Math.random() * 10); //génètre un nombre aléatoire 
+        const updatedRandom = Math.floor(Math.random() * 14); //génètre un nombre aléatoire 
         const updatedSavedAnswer = answers[updatedRandom].answer; // lis la réponse dans le tableau selon index du chiffre aléatoire
         const compteurnew = compteur+1 //incrémentation d'un compteur pour ID unique 
       
