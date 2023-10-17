@@ -1,5 +1,4 @@
-
-@import "settings";
+@import "settings"; //on importe setting pour la gestion des variables (qui sont déclaré dans setting)
 
 .game {
     display: flex;
@@ -16,6 +15,7 @@
 
 
 h1 {
+    margin-top: 3vh;
     font-size: 50px;
     color: white;
     text-align: center;
@@ -59,13 +59,13 @@ h1 {
     }
 
     .firstAnswer {
-        background-image: url("src/images/answerBall8-v2.png");
+        background-image: url("src/images/answerBall8-v2.png"); // image de la grosse boule 
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
 
         width: 40vw;
-        height: 80vh;
+        height: 77vh;
         color: white;
         display: flex;
         justify-content: center;
@@ -83,18 +83,15 @@ h1 {
 
 }
 
-.animationImg {
+.animationImg { //animation de la grosse boule 
     animation-duration: 3s;
     animation-name: slidein, rotating;
 }
 
-@keyframes slidein {
+@keyframes slidein { 
     from {
         margin-left: 250%;
     }
-    // 50% {
-    //     margin-left: 0%;
-    // }
     to {
         margin-left: 0%;
     }
@@ -105,10 +102,6 @@ h1 {
         transform: rotate(0deg);
         scale:0.5;
     }
-    // 50% {
-    //     transform: rotate(360deg);
-    //     scale:0.75;
-    // }
     to {
         transform: rotate(-360deg);
         scale:1;
@@ -123,6 +116,7 @@ h1 {
     width:45vh;
     flex-direction: column;
     margin-right: 5vh;
+    align-items: center;
 
     h1 {
         padding: 10px 0 10px 0;
@@ -134,9 +128,19 @@ h1 {
     
 }
 
-.boxHalfWidth {
+.boxHalfWidth { //bare de séparation
     border-bottom: solid black 2px;
     width: 15vh;
+    height: 1px;
+    border-bottom: 3px solid #807a7a;
+    border-radius: 20px;
+    margin:5px;
+    
+}
+
+.h1boxHalfWidth { //bare de séparation
+    border-bottom: solid black 2px;
+    width: 30vh;
     height: 1px;
     border-bottom: 3px solid #807a7a;
     border-radius: 20px;
