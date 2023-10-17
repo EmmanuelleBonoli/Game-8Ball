@@ -54,15 +54,18 @@ function Button({ answers }) {// on a mis la props answers en paramètres de la 
 
     // On appelle la fonction Random au click et la valeur de notre state prend ra valeur retournée par la fonction Randometurn 
     return (
-        <div>
-            <div>
-                <img src="src/images/ball8.png" alt="magicball" />
-            </div>
+        <>
+        <h1>WCS Magic 8 Ball </h1>
+        <div className="game">
+            
+                {/* <img src="src/images/ball8.png" alt="magicball" /> */}
+            
+            
             <div className="buttonComponent">
-                <h1>WCS Magic 8 Ball : </h1>
+                
                 <div className="submit">
                     <input onChange={handleChange} name="myInput" value={question} />
-                    <button onClick={handleRandom}> Soumettre </button>
+                    <button onClick={handleRandom}> SOUMETTRE </button>
                     {/* rappel fonction handleRandom lors du Onclick */}
                 </div>
                 <div className='firstAnswer'>
@@ -84,8 +87,10 @@ function Button({ answers }) {// on a mis la props answers en paramètres de la 
                      }
                      
                 </div>
+
             </div>
         </div>
+        </>
     )
 }
 
