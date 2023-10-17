@@ -1,25 +1,79 @@
-.buttonComponent {
-    h1 {
-        font-size: 20px;
+.game {
+    display: flex;
+    justify-content: space-between;
+    font-family:'Pixelify Sans', sans-serif;
+    
+
+
+    h2{
+        font-size:30px;
         color: white;
     }
+}
 
+
+h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family:'Pixelify Sans', sans-serif;
+}
+
+
+
+.buttonComponent {
+    display:flex;
+    margin-left: 30px;
+    position: relative;
+   
+    
+
+
+    .submit {
+        display:flex;
+        gap:20px;
+        flex-direction:column;
+        margin-top:10vh;
+        margin-left: 5vw;
+    }
+
+    input{
+        width:20vw;
+        border-radius: 10px;
+        height: 5vh;
+        font-size: 30px;
+    }
 
     button {
-        background-color: red;
-        padding: 12px;
+        background-color:black;
+        padding: 5px;
+        border-radius: 10px ;
+        color:white;
+        font-size: 25px;
+        height: 5vh;
+        font-family:'Pixelify Sans', sans-serif;
     }
 
     .firstAnswer {
-        background-image: url("src/images/answerBall8-v3.png");
+        background-image: url("src/images/answerBall8-v2.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        height: 15vh;
+        width: 40vw;
+        height: 80vh;
         color: white;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top:10vh;
+        left:30vw;
+
+        p{
+            font-size: 30px;
+        }
+        
     }
 
 
