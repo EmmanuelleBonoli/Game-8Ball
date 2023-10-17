@@ -45,6 +45,7 @@ h1 {
         border-radius: 10px;
         height: 5vh;
         font-size: 30px;
+        font-family:'Pixelify Sans', sans-serif;
     }
 
     button {
@@ -87,12 +88,13 @@ h1 {
     background: #ffffff;
     box-shadow:  4px 4px 0px #3a3838;
     display:flex;
-    width:35vh;
+    width:45vh;
     flex-direction: column;
+    margin-right: 5vh;
 
     h1 {
         padding: 10px 0 10px 0;
-        font-size: 20px;
+        font-size: 30px;
         color: rgb(17, 17, 133); 
     }
 
@@ -121,11 +123,13 @@ h1 {
     color: rgb(17, 17, 133); 
     padding : 10px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 #Q {
     color: rgb(17, 17, 133); 
     padding : 10px;
     font-weight: bold;
+    font-size: 20px;
 
 }
