@@ -62,7 +62,7 @@ function Button({ answers }) {// on a mis la props answers en paramètres de la 
         <h1>WCS Magic 8 Ball </h1>
         <div className="game">
             
-                {/* <img src="src/images/ball8.png" alt="magicball" /> */}
+            {/* <img src="src/images/ball8.png" alt="magicball" /> */}
             
             
             <div className="buttonComponent">
@@ -72,7 +72,7 @@ function Button({ answers }) {// on a mis la props answers en paramètres de la 
                     <button onClick={handleRandom}> SOUMETTRE </button>
                     {/* rappel fonction handleRandom lors du Onclick */}
                 </div>
-                <div className='firstAnswer'>
+                <div className='firstAnswer animationImg'>
                     <p>Question : {savedQuestion}</p>
                     <p>Réponse : {savedAnswer}</p>
                     {/* <img src={answers[random].img} alt="" /> */}

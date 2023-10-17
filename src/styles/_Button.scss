@@ -83,6 +83,38 @@ h1 {
 
 }
 
+.animationImg {
+    animation-duration: 3s;
+    animation-name: slidein, rotating;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 250%;
+    }
+    // 50% {
+    //     margin-left: 0%;
+    // }
+    to {
+        margin-left: 0%;
+    }
+}
+@keyframes rotating {
+    
+    from {
+        transform: rotate(0deg);
+        scale:0.5;
+    }
+    // 50% {
+    //     transform: rotate(360deg);
+    //     scale:0.75;
+    // }
+    to {
+        transform: rotate(-360deg);
+        scale:1;
+    }
+}
+
 .historyTable {
     border-radius: 20px;
     background: #ffffff;
