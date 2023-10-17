@@ -41,6 +41,10 @@ function Button({ answers }) {// on a mis la props answers en paramètres de la 
         setCompteur(compteurnew)
         const history = new historyID(compteurnew, question, updatedSavedAnswer)
         console.log(history)
+        
+        if(historyTable.length > 6) {
+            historyTable.splice(0, 1);
+        }
         historyTable.push(history)
 
         setQuestion("")
