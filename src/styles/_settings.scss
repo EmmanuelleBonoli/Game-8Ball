@@ -9,6 +9,8 @@ body,
 :root {
     min-height: 100vh;
     min-width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 body {
