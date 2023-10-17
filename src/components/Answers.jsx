@@ -44,12 +44,12 @@ const answers = [
     },
     {
         id: 9,
-        answer: "",
+        answer: "qzdzqdqzdzqd",
         img: "./assets/giphy.gif",
     },
     {
         id: 10,
-        answer: "",
+        answer: "qzdzqdzqdz",
         img: "./assets/giphy.gif",
 
     },

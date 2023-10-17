@@ -18,26 +18,34 @@ function Button({ answers }) {// on a mis la props answers en paramètres de la 
         this.savedAnswer = savedAnswer;
     }
 
-    let [random, setRandom] = useState(10);
-    let [question, setQuestion] = useState(" ");
+    // let [random, setRandom] = useState(10);
+    let [question, setQuestion] = useState("");
     let [savedQuestion, setSavedQuestion] = useState("");
     let [compteur, setCompteur] = useState(0);
     let [savedAnswer, setSavedAnswer] = useState("");
 
+    // const handleRandom = () => {
+    //     setRandom(Math.floor(Math.random() * 10))
+    //     setSavedQuestion(question)
+    //     setSavedAnswer(answers[random].answer)
     const handleRandom = () => {
-        setRandom(Math.floor(Math.random() * 8))
-        setSavedQuestion(question)
-        setSavedAnswer(answers[random].answer)
+        const updatedRandom = Math.floor(Math.random() * 10);
+        const updatedSavedAnswer = answers[updatedRandom].answer;
+        const compteurnew = compteur+1
+        // setRandom(updatedRandom);
+        setSavedQuestion(question);
+        setSavedAnswer(updatedSavedAnswer);
         // historyTable.push(savedQuestion)
         // historyTable.push(answers[random].answer)
         // console.log(historyTable)
-        setCompteur(compteur + 1)
-        const history = new historyID(compteur, question, savedAnswer)
+        setCompteur(compteurnew)
+        const history = new historyID(compteurnew, question, updatedSavedAnswer)
         console.log(history)
         historyTable.push(history)
 
         setQuestion("")
-        return setRandom
+        
+        return history
     }
 
     const handleChange = event => {
@@ -62,20 +70,24 @@ function Button({ answers }) {// on a mis la props answers en paramètres de la 
                 </div>
                 <div className='firstAnswer'>
                     <p>Question : {savedQuestion}</p>
-                    <p>Réponse : {answers[random].answer}</p>
-                    <img src={answers[random].img} alt="" />
+                    <p>Réponse : {savedAnswer}</p>
+                    {/* <img src={answers[random].img} alt="" /> */}
                 </div>
             </div>
-            <div>
-                <h2>Historique des questions posées</h2>
-                {historyTable.map((element) => {
-                    return (<div key={element.id}>
-                        <p>{element.savedQuestion}</p>
-                        <p>{element.savedAnswer}</p>
+            <div className="historyTable">
+                <h1>Historique des questions posées :</h1>
+                <div className="table">
+                    {historyTable.map((element) => {
+                        return (<div className="QR" key={element.id}>
+                            <p id="Q">Q : {element.savedQuestion}</p>
+                            <p id="R">R : {element.savedAnswer}</p>
+                            <div className="boxHalfWidth"></div>
+                        </div>
+                        )})
+                     }
+                     
+                </div>
 
-                    </div>
-                    )
-                })}
             </div>
         </div>
         </>
