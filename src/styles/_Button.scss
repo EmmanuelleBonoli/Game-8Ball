@@ -59,7 +59,7 @@ h1 {
     }
 
     .firstAnswer {
-        background-image: url("src/images/answerBall8-v2.png"); // image de la grosse boule 
+        background-image: url("/images/answerBall8-v2.png"); 
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -83,7 +83,7 @@ h1 {
 
 }
 
-.animationImg { //animation de la grosse boule 
+.animationImg { 
     animation-duration: 3s;
     animation-name: slidein, rotating;
 }
@@ -128,7 +128,7 @@ h1 {
     
 }
 
-.boxHalfWidth { //bare de séparation
+.boxHalfWidth { 
     border-bottom: solid black 2px;
     width: 15vh;
     height: 1px;
@@ -138,7 +138,7 @@ h1 {
     
 }
 
-.h1boxHalfWidth { //bare de séparation
+.h1boxHalfWidth { 
     border-bottom: solid black 2px;
     width: 30vh;
     height: 1px;
